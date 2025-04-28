@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <h2>💬 LetsChat</h2>
+      </div>
+
+    <div id="username-container">
+        <input type="text" id="username" placeholder="Enter your username" required>
+        <button onclick="enterChat()">Enter Chat</button>
+    </div>
+
+    <div id="chat-box" style="display: none;">
+        <div id="chat-container"></div>
+        <input type="text" id="message-input" placeholder="Type a message..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <h4 id="footer">Made with ❤️ by Tejas Amrit</h4>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

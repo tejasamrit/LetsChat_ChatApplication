@@ -1,0 +1,194 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  /* background-color: #f5f5f5; */
+  border-bottom: 1px solid #ccc;
+}
+
+.logo h2 {
+  font-family: 'Poppins', sans-serif;
+  /* font-size: 30px; */
+  color: #333;
+  margin: 0;
+}
+.logo {
+  animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+/* Username Container Styling */
+#username-container {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#username {
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0e7eae;
+  border: none;
+  border-radius: 17px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #074762;
+}
+
+/* Chatbox Styling */
+#chat-box {
+  display: none;
+  width: 100%;
+  max-width: 800px;  /* Prevent chat box from stretching too wide */
+  height: 70vh;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Chat Container */
+#chat-container {
+  padding: 10px;
+  height: calc(100% - 50px);  /* Make room for the input box */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-image: url('bg.png'); /* Add your background image here */
+    background-size: cover;  /* Make sure the image covers the entire container */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat;  
+}
+
+/* Message Styling */
+.message {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.my-message {
+  background-color: #4CAF50;
+  color: white;
+  text-align: right;
+  align-self: flex-end;
+}
+
+.other-message {
+  background-color: #f1f1f1;
+  color: black;
+  text-align: left;
+  align-self: flex-start;
+}
+
+/* Message Input and Send Button Styling */
+#message-input {
+  width: 86%;
+    padding: 10px;
+    margin-right: 14px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-top: 1px solid black;
+    margin-left: 8px;
+}
+
+.send-button {
+  padding: 10px 20px;
+  background-color: #0e7eae;
+  border: none;
+  border-radius: 17px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.send-button:hover {
+  background-color: #074762;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
+
+#footer {
+  position: fixed;  /* Always stays in one position */
+  bottom: 30px;     /* 10px above the bottom */
+  width: 100%;      /* Take full width */
+  text-align: center; /* Center the text */
+  font-size: 14px;
+  color: #666565;      /* Light gray color */
+  /* font-family: 'Arial', sans-serif; */
+  letter-spacing: 1px;
+  opacity: 0.9;     /* Slightly transparent */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
